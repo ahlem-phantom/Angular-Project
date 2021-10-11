@@ -1,0 +1,8 @@
+.container{
+  border:2px solid red;
+  display: inline-block;
+  width: 1000px;
+}
+[hidden] {
+  display: none !important;
+}

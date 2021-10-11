@@ -1,0 +1,9 @@
+<p>list-fournisseur works!</p>
+<div *ngFor="let fournisseur of list" >
+<fieldset *ngIf="fournisseur.idFournisseur>100"[style.background-color]=getColor(fournisseur) (click)="delete(fournisseur)" >
+  <legend>IdFournisseur :{{fournisseur.idFournisseur}} </legend>
+  <div class="code" *ngIf="fournisseur.code.includes('2A',0)" >Code: {{fournisseur.code}}</div>
+  <div *ngIf="!fournisseur.code.includes('2A',0)" > Code: {{fournisseur.code}} </div>
+  Libelle :{{fournisseur.libelle}}
+</fieldset>
+</div>
